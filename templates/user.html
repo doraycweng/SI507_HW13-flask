@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User</title>
+</head>
+<body>
+	<h1>Hello, {{name}}!</h1>
+	<h2>Today's top headers in {{topic}} are...</h2>
+	<ol>
+	{% for item in newsdata %}
+	  <li>{{item.title}} ({{item.url}})</li>
+	</br>
+	{% endfor %}
+	</ol>
+
+</body>
+</html>

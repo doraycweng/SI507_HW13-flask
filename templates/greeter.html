@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Greeter</title>
+</head>
+<body>
+	<h1>{{greeting}} {{name}}!</h1>
+	<h2>Today's top headers in technology are...</h2>
+	<ol>
+	{% for item in newsdata %}
+	  <li>{{item.title}} ({{item.url}})</li>
+	</br>
+	{% endfor %}
+	</ol>
+
+</body>
+</html>
